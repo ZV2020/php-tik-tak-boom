@@ -12,11 +12,8 @@
 <div class="container">
     <div class="row align-items-center">
         <div class="col col-md-8 offset-md-2">
-            <div class="row">
+            <div class="header_row">
                 <h1>Тик-так-бум</h1>
-            </div>
-            <div class="row">
-                <span class="alert alert-primary" id="gameStatusField">Игра идёт</span>
             </div>
             <div class="row">
                 <div class="col">
@@ -28,13 +25,20 @@
                 </div>
             </div>
             <div class="row">
-                <h3 id="questionField"></h3>
+                <span class="alert" id="gameStatusField">Игра идёт</span>
+            </div>
+
+            <div class="row">
+                <h3 class="alert" id="questionField"></h3>
             </div>
             <div class="row">
-                <div id="answer1" class="btn btn-primary form-control text-left answer"></div>
+                <div id="answer1" class="btn form-control text-left answer"></div>
             </div>
             <div class="row">
-                <div id="answer2" class="btn btn-danger form-control text-left answer"></div>
+                <div id="answer2" class="btn form-control text-left answer"></div>
+            </div>
+            <div>
+                <div id="startStop" class="btn btn-danger form-control text-center">Начать игру</div>
             </div>
         </div>
     </div>

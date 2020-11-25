@@ -7,6 +7,7 @@ window.onload = function()
         document.getElementById('questionField'),
         document.getElementById('answer1'),
         document.getElementById('answer2'),
+        document.getElementById('startStop'),
     )
     tikTakBoom.run();
 }

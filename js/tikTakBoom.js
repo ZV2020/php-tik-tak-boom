@@ -5,7 +5,8 @@ tikTakBoom = {
         gameStatusField,
         textFieldQuestion,
         textFieldAnswer1,
-        textFieldAnswer2
+        textFieldAnswer2,
+        startStop
     ) {
         this.boomTimer = 30;
         this.countOfPlayers = 2;
@@ -16,10 +17,14 @@ tikTakBoom = {
         this.textFieldQuestion = textFieldQuestion;
         this.textFieldAnswer1 = textFieldAnswer1;
         this.textFieldAnswer2 = textFieldAnswer2;
+        this.startStop = startStop;
+
+        
 
         this.needRightAnswers = 3;
     },
 
+    
     run() {
         this.state = 1;
 
@@ -32,6 +37,7 @@ tikTakBoom = {
 
     turnOn() {
         this.gameStatusField.innerText += ` Вопрос игроку №${this.state}`;
+        this.startStop.innerText = `Завершить игру`;
 
         const taskNumber = randomIntNumber(this.tasks.length - 1);
         this.printQuestion(this.tasks[taskNumber]);
@@ -39,6 +45,8 @@ tikTakBoom = {
         this.tasks.splice(taskNumber, 1);
 
         this.state = (this.state === this.countOfPlayers) ? 1 : this.state + 1;
+
+        this.startStop.addEventListener('click', () => this.finish('lose') );
     },
 
     turnOff(value) {
@@ -51,11 +59,13 @@ tikTakBoom = {
         if (this.rightAnswers < this.needRightAnswers) {
             if (this.tasks.length === 0) {
                 this.finish('lose');
+                this.startStop.innerText = `Начать игру`;
             } else {
                 this.turnOn();
             }
         } else {
             this.finish('won');
+            this.startStop.innerText = `Начать игру`;
         }
 
         this.textFieldAnswer1.removeEventListener('click', answer1);
@@ -85,6 +95,9 @@ tikTakBoom = {
         this.textFieldQuestion.innerText = ``;
         this.textFieldAnswer1.innerText = ``;
         this.textFieldAnswer2.innerText = ``;
+        this.startStop.innerText = `Начать игру`;
+
+        this.startStop.addEventListener('click', () => location.reload());
 
         console.log(this);
     },

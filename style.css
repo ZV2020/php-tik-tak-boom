@@ -4,18 +4,42 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 
-.div.h1 {
+.header_row {
     color: rgb(138, 27, 13);
-    align-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+#answer1 {
+    background-color: rgb(255, 144, 110);
+    color: white;
+}
+
+#answer2 {
+    background-color: rgb(248, 80, 80);
+    color: white;
+}
+
+#questionField {
+    width: 800px;
+    background-color: rgb(233, 233, 233);
+}
+
+#gameStatusField {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(248, 80, 80);
+    width: 800px;
+
 }
 
 .timer-output{
     font-family: 'Share Tech Mono', monospace;
-    width: 200px;
-    background: rgb(125, 223, 236);
+    width: 300px;
     color: rgb(7, 77, 80);
     padding: 16px 8px;
-    font-size: 64px;
+    font-size: 74px;
     text-align: center;
     line-height: 1;
     user-select: none;
@@ -28,4 +52,11 @@ body {
     align-content: center;
     justify-content: center;
     margin: 12px;
+}
+
+#startStop {
+    width: 200px;
+    margin-top: 60px;
+    position: absolute;
+    left: 38%;
 }
