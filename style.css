@@ -32,6 +32,7 @@ body {
     color: rgb(248, 80, 80);
     width: 800px;
 
+
 }
 
 .timer-output{
@@ -41,8 +42,9 @@ body {
     padding: 16px 8px;
     font-size: 74px;
     text-align: center;
-    line-height: 1;
+    line-height: 50px;
     user-select: none;
+    
 }
 
 .timer-output-wrapper{
@@ -59,4 +61,16 @@ body {
     margin-top: 60px;
     position: absolute;
     left: 38%;
+    z-index: 1;
+}
+
+.boom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width:  90%;
+    object-fit: contain;
+    z-index: 0;
+    opacity: 0.75;
 }

@@ -8,8 +8,8 @@ tikTakBoom = {
         textFieldAnswer2,
         startStop
     ) {
-        this.boomTimer = 30;
-        this.countOfPlayers = 2;
+        this.boomTimer = 60;
+        this.countOfPlayers = 3;
         this.tasks = JSON.parse(tasks);
 
         this.timerField = timerField;
@@ -18,10 +18,8 @@ tikTakBoom = {
         this.textFieldAnswer1 = textFieldAnswer1;
         this.textFieldAnswer2 = textFieldAnswer2;
         this.startStop = startStop;
-
-        
-
-        this.needRightAnswers = 3;
+        this.needWrongAnswers = 2;
+        this.needRightAnswers = 19;
     },
 
     
@@ -29,6 +27,9 @@ tikTakBoom = {
         this.state = 1;
 
         this.rightAnswers = 0;
+
+        this.wrongAnswers = 0;
+
 
         this.turnOn();
 
@@ -55,14 +56,19 @@ tikTakBoom = {
             this.rightAnswers += 1;
         } else {
             this.gameStatusField.innerText = 'Неверно!';
+            this.wrongAnswers += 1;
         }
         if (this.rightAnswers < this.needRightAnswers) {
             if (this.tasks.length === 0) {
                 this.finish('lose');
-                this.startStop.innerText = `Начать игру`;
+                // this.startStop.innerText = `Начать игру`;
             } else {
                 this.turnOn();
             }
+        // if (this.wrongAnswers >= this.needWrongAnswers) {
+
+        // }
+
         } else {
             this.finish('won');
             this.startStop.innerText = `Начать игру`;
@@ -100,6 +106,8 @@ tikTakBoom = {
         this.startStop.addEventListener('click', () => location.reload());
 
         console.log(this);
+        console.log(this.wrongAnswers);
+
     },
 
     timer() {
