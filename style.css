@@ -5,6 +5,7 @@ body {
 }
 
 .header_row {
+    padding-top: 1%;
     color: rgb(138, 27, 13);
     font-weight: bold;
     text-align: center;
@@ -48,6 +49,7 @@ body {
 }
 
 .timer-output-wrapper{
+    padding-top: 3%;
     width: calc(100% - 24px);
     display: flex;
     flex-direction: row;
@@ -74,3 +76,20 @@ body {
     z-index: 0;
     opacity: 0.75;
 }
+
+.time-select {
+    padding-top: 3%;
+}
+
+.player-number {
+    padding-top: 3%;
+    position: absolute;
+    left: 74%;
+}
+
+/* .dropdown-time option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} */

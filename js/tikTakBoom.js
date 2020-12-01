@@ -8,7 +8,7 @@ tikTakBoom = {
         textFieldAnswer2,
         startStop
     ) {
-        this.boomTimer = 60;
+        this.boomTimer = 30;
         this.countOfPlayers = 3;
         this.tasks = JSON.parse(tasks);
 
