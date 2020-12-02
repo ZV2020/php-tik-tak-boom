@@ -6,12 +6,11 @@ tikTakBoom = {
         textFieldQuestion,
         textFieldAnswer1,
         textFieldAnswer2,
-        startStop
+        startStop,
     ) {
-        this.boomTimer = 30;
-        this.countOfPlayers = 3;
+        this.boomTimer = parseInt(timeAmount.value);
+        this.countOfPlayers = parseInt(playerNumber.value);
         this.tasks = JSON.parse(tasks);
-
         this.timerField = timerField;
         this.gameStatusField = gameStatusField;
         this.textFieldQuestion = textFieldQuestion;
@@ -24,6 +23,7 @@ tikTakBoom = {
 
     
     run() {
+
         this.state = 1;
 
         this.rightAnswers = 0;
@@ -132,3 +132,10 @@ tikTakBoom = {
         }
     },
 }
+
+
+    // function getSelectValue() {
+    //     var selectValue = document.getElementById("dropdown-item").value;
+    //     console.log(selectValue);
+    // }
+    // getSelectValue();
