@@ -97,6 +97,56 @@ const tasks = `
             "answer2": { "result": false, "value": "Удаляет элемент из конца массива" }
         },
         {
+            "question": "Сколько элементов в тернарном операторе?",
+            "answer1": { "result": true, "value": "Три" },
+            "answer2": { "result": false, "value": "Два" }
+        },
+        {
+            "question": "Какое количество значений может иметь 'null'?",
+            "answer1": { "result": true, "value": "Лишь одно" },
+            "answer2": { "result": false, "value": "Любое количество" }
+        },
+        {
+            "question": "Как найти наибольшее из двух чисел?",
+            "answer1": { "result": false, "value": "Math.ceil(x, y)" },
+            "answer2": { "result": true, "value": "Math.max(x, y)" }
+        },
+        {
+            "question": "Как правильно вставить внешний скрипт?",
+            "answer1": { "result": false, "value": "<script href='sample1.js'>" },
+            "answer2": { "result": true, "value": "<script src='sample1.js'>" }
+        },
+        {
+            "question": "Как вызвать функцию 'myFunction'?",
+            "answer1": { "result": false, "value": "call function myFunction()" },
+            "answer2": { "result": true, "value": "myFunction()" }
+        },
+        {
+            "question": "Что делает оператор === ?",
+            "answer1": { "result": false, "value": "Сравнивает по ссылке, а не по значению." },
+            "answer2": { "result": true, "value": "Сравнивает без приведения типа." }
+        },
+        {
+            "question": "Что содержит не инициализированная переменная?",
+            "answer1": { "result": false, "value": "null" },
+            "answer2": { "result": true, "value": "undefined" }
+        },
+        {
+            "question": "Функции могут быть вложены внутри других функций",
+            "answer1": { "result": true, "value": "Правда" },
+            "answer2": { "result": false, "value": "Неправда" }
+        },
+        {
+            "question": "Стрелочные функции анонимные",
+            "answer1": { "result": true, "value": "Правда" },
+            "answer2": { "result": false, "value": "Неправда" }
+        },
+        {
+            "question": "Что такое Арность?",
+            "answer1": { "result": true, "value": "Это количество аргументов функции" },
+            "answer2": { "result": false, "value": "Это длинна массива" }
+        },
+        {
             "question": "Функция parseFloat()преобразуеттекст в",
             "answer1": { "result": false, "value": "Целое число" },
             "answer2": { "result": true, "value": "Вещественное число" }

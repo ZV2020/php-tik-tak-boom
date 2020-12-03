@@ -54,9 +54,11 @@ tikTakBoom = {
         if (this.currentTask[value].result) {
             this.gameStatusField.innerText = 'Верно!';
             this.rightAnswers += 1;
+            this.boomTimer += 5;
         } else {
             this.gameStatusField.innerText = 'Неверно!';
             this.wrongAnswers += 1;
+            this.boomTimer -= 5;
         }
         if (this.rightAnswers < this.needRightAnswers) {
             if (this.tasks.length === 0) {
@@ -105,8 +107,6 @@ tikTakBoom = {
 
         this.startStop.addEventListener('click', () => location.reload());
 
-        console.log(this);
-        console.log(this.wrongAnswers);
 
     },
 
