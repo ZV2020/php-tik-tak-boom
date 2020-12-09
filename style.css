@@ -32,9 +32,19 @@ body {
     font-weight: bold;
     color: rgb(248, 80, 80);
     width: 800px;
-
-
 }
+
+#onLoadField {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(248, 80, 80);
+    width: 800px;
+}
+
+/* .quest {
+    display: none;
+} */
 
 .timer-output{
     font-family: 'Share Tech Mono', monospace;

@@ -34,31 +34,34 @@
                     </select>
                   </div>
             </div>
-            
+          
             <div class="row">
                 <div class="col">
                     <div class="timer-output-wrapper">
-                        <div class="timer-output" id="timerField">
+                        <div class="timer-output quest" id="timerField">
                             00:00
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="row">
-                <span class="alert" id="gameStatusField">Игра идёт</span>
+                <span class="alert quest" id="gameStatusField">Приготовьтесь...</span>
+                <!-- <span class="alert quest" id="onLoadField">Нажмите кнопку СТАРТ чтобы начать</span> -->
             </div>
-
+        <div class="game-quest quest"> 
             <div class="row">
-                <h3 class="alert" id="questionField"></h3>
-            </div>
-            <div class="row">
-                <div id="answer1" class="btn form-control text-left answer"></div>
+                <h3 id="questionField" class="alert" ></h3>
             </div>
             <div class="row">
-                <div id="answer2" class="btn form-control text-left answer"></div>
+                <div id="answer1" class="btn form-control text-left answer quest" ></div>
             </div>
+            <div class="row">
+                <div id="answer2" class="btn form-control text-left answer quest" ></div>
+            </div>
+        </div> 
             <div class="col">
-                <button type="button" id="startStop" class="btn btn-danger text-center">Начать игру</button>
+                <button type="button" id="startStop" class="btn btn-danger text-center">СТАРТ</button>
                 <div>
                    <img src="img/cartoon-boom-comic-book-explosion-260nw-84002389.jpg" class="boom">
                 </div>

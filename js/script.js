@@ -1,6 +1,6 @@
-const start = document.querySelector('#startStop');
+// const start = document.querySelector('#startStop');
 
-start.addEventListener('click', () => {
+window.onload = function () {
     tikTakBoom.init(
         tasks,
         document.getElementById('timerField'),
@@ -9,8 +9,9 @@ start.addEventListener('click', () => {
         document.getElementById('answer1'),
         document.getElementById('answer2'),
         document.getElementById('startStop'),
-        // document.getElementById('timeAmount'),
-        // document.getElementById('players-select'),
+        document.getElementById('timeAmount'),
+        document.getElementById('players-select'),
+        // document.querySelector('.game-quest'),
     )
-    tikTakBoom.run();
-});
+    tikTakBoom.gameStart();
+};
