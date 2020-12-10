@@ -19,7 +19,7 @@
 
 ## *Файлы для проверки*
 
-## [Описание игры](/gameDescription.md)
+## [Игра](https://zv2020.github.io/tik-tak-boom/)
 
 
 

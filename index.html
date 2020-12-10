@@ -16,7 +16,7 @@
                 <h1>Тик-так-бум</h1>
             </div>
 
-            <div class="row">
+            <div id="gameOptions" class="row quest">
                 <div class="time-select">
                     <label for="Select1">Время игры</label>
                     <select class="form-control" id="timeAmount">
@@ -24,6 +24,9 @@
                         <option value="60">60 секунд</option>
                         <option value="120">120 секунд</option>
                     </select>
+                  </div>
+                  <div class="rules">
+                    <a id="rules" class="btn rules float-center quest" href="game-rules.html" target="_blank">Правила игры</a>
                   </div>
                   <div class="players-select">
                     <label for="Select2">Число игроков</label>
@@ -47,17 +50,17 @@
             
             <div class="row">
                 <span class="alert quest" id="gameStatusField">Приготовьтесь...</span>
-                <!-- <span class="alert quest" id="onLoadField">Нажмите кнопку СТАРТ чтобы начать</span> -->
+                <span class="alert quest" id="onLoadField">Для начала игры выберите время и число игроков. Затем нажмите кнопку СТАРТ</span>
             </div>
-        <div class="game-quest quest"> 
+        <div id="game" class="game-quest quest"> 
             <div class="row">
                 <h3 id="questionField" class="alert" ></h3>
             </div>
             <div class="row">
-                <div id="answer1" class="btn form-control text-left answer quest" ></div>
+                <div id="answer1" class="btn form-control text-left answer" ></div>
             </div>
             <div class="row">
-                <div id="answer2" class="btn form-control text-left answer quest" ></div>
+                <div id="answer2" class="btn form-control text-left answer" ></div>
             </div>
         </div> 
             <div class="col">

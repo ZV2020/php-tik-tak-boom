@@ -11,7 +11,7 @@ window.onload = function () {
         document.getElementById('startStop'),
         document.getElementById('timeAmount'),
         document.getElementById('players-select'),
-        // document.querySelector('.game-quest'),
+        document.querySelector('.quest'),
     )
     tikTakBoom.gameStart();
 };

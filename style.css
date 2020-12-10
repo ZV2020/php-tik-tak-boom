@@ -4,6 +4,18 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 
+#rules {
+    width: 200px;
+    margin-top: 60px;
+    position: absolute;
+    left: 38%;
+    z-index: 1;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 144, 110);
+
+}
+
 .header_row {
     padding-top: 1%;
     color: rgb(138, 27, 13);
@@ -42,9 +54,9 @@ body {
     width: 800px;
 }
 
-/* .quest {
+.quest {
     display: none;
-} */
+}
 
 .timer-output{
     font-family: 'Share Tech Mono', monospace;
